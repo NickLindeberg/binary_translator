@@ -33,13 +33,14 @@ class BinaryTranslator
     }
   end
 
-  def split_letters(letters)
-    (letters.split)
+  def split_letters(banana)
+    (banana.split)
   end
 
   def translate(letters)
     letter = split_letters(letters)
-    @alpha_to_binary[letter]
+    letter_changed = @alpha_to_binary[letter]
+    return letter_changed
 
   end
 
