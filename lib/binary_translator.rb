@@ -1,3 +1,5 @@
+require 'pry'
+
 class BinaryTranslator
   def initialize
     @alpha_to_binary = {
@@ -29,4 +31,31 @@ class BinaryTranslator
       "z" => "011010"
     }
   end
+
+  def translate(letters)
+    letter = []
+    letter << letters
+    letter.map.with_index do |letters|
+
+    @alpha_to_binary[letters]
+  end
+
+
+
+
+
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
 end
