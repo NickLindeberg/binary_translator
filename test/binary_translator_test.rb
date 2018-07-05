@@ -11,13 +11,20 @@ class BinaryTranslatorTest <Minitest::Test
   assert_equal expected_a, bt.translate("a")
   end
 
+  def test_if_a_works
+  bt = BinaryTranslator.new
+  expected_a = "000001"
+
+  assert_equal expected_a, bt.translate("a")
+  end
+
 
   def test_if_b_works
   bt = BinaryTranslator.new
   expected_z = "011010"
 
   assert_equal expected_z, bt.translate("z")
-  end 
+  end
 
 
 

@@ -2,6 +2,7 @@ require 'pry'
 
 class BinaryTranslator
   def initialize
+
     @alpha_to_binary = {
       "a" => "000001",
       "b" => "000010",
@@ -32,10 +33,13 @@ class BinaryTranslator
     }
   end
 
-  def translate(letters)
-    # letter = letters.split
-    @alpha_to_binary[letters]
+  def split_letters(letters)
+    (letters.split)
+  end
 
+  def translate(letters)
+    letter = split_letters(letters)
+    @alpha_to_binary[letter]
 
   end
 
