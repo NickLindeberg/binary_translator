@@ -33,29 +33,10 @@ class BinaryTranslator
   end
 
   def translate(letters)
-    letter = []
-    letter << letters
-    letter.map.with_index do |letters|
-
+    # letter = letters.split
     @alpha_to_binary[letters]
+
+
   end
-
-
-
-
-
-
-end
-
-
-
-
-
-
-
-
-
-
-
 
 end
